@@ -1,0 +1,39 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+
+#custom-cursor {
+    @apply cursor-none h-screen;
+}
+
+.universal-cursor{
+    @apply fixed -translate-x-2/4 -translate-y-2/4 z-[1] pointer-events-none left-0 top-0;
+}
+
+.cursor-dot-1 {
+    @apply w-[5px] h-[5px] bg-[white];
+}
+
+.cursor-outline-1 {
+    @apply w-[30px] h-[30px] border-2 border-solid border-white/50;
+}
+
+.cursor-dot-1,
+.cursor-outline-1 {
+    @apply rounded-[50%];
+}
+
+.cursor-dot-2 {
+    @apply w-2.5 h-2.5 bg-[yellow] rounded-[50%] ;
+}
+
+
+.cursor-dot-3{
+    @apply w-[6px] h-[6px] bg-white rounded-full;
+}
+
+.cursor-outline-3 {
+    @apply w-[30px] h-[30px] border-[1px] border-solid border-white opacity-50;
+}
